@@ -1,0 +1,52 @@
+@use "../_bases" as *;
+
+.page-mv {
+
+  @at-root %mv {
+    background-size: cover;
+    background-position: center;
+    height: 20.81vw;
+    min-height: 333px;
+    
+    @include mq(sp) {
+      min-height: 0;
+      height: 51.2vw;
+    }
+  }
+
+  @extend %mv;
+
+  &--interview {
+    @extend %mv;
+    background-image: url(../images/interview/mv.jpg);
+    
+    @include mq(sp) {
+      background-image: url(../images/interview/mv_sp.jpg);
+    }
+  }
+
+  &--commitment {
+    @extend %mv;
+    background-image: url(../images/commitment/mv.jpg);
+    
+    @include mq(sp) {
+      background-image: url(../images/commitment/mv_sp.jpg);
+    }
+  }
+
+  &--fact {
+    @extend %mv;
+    background-image: url(../images/fact/mv.jpg);
+    
+    @include mq(sp) {
+      background-image: url(../images/fact/mv_sp.jpg);
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+}

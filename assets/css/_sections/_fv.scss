@@ -1,0 +1,88 @@
+@use "../_bases" as *;
+
+
+.fv {
+  position: relative;
+  width: 100%;
+  padding-top: 62.69%;
+
+  @include mq(sp) {
+    padding-top:133.87%;
+  }
+
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+  }
+
+  &__wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__title-inner {
+    position: absolute;
+    left: 10.81vw;
+    top: 10.06vw;
+    width: 37.5vw;
+    @include mq(sp) {
+      top: 72.8vw;
+      left: 4.8vw;
+      width: 88vw;
+    }
+  }
+  
+  &__title {
+    font-size: 3.125vw;
+    display: block;
+    font-weight: 500;
+    
+    @include mq(sp) {
+      font-size: 8vw;
+    }
+  }
+  
+  &__title-1st {
+    display: block;
+    padding-top: 0.32em;
+    padding-bottom: 0.32em;
+    padding-right: 0.52em;
+    width: fit-content;
+    background-color: rgba($color-white, 0.7);
+  }
+  
+  &__title-2nd {
+    display: block;
+    padding-top: 0.32em;
+    padding-bottom: 0.32em;
+    padding-left: 0.52em;
+    margin-left: auto;
+    width: fit-content;
+    background-color: rgba($color-white, 0.7);
+  }
+
+  &__company {
+    position: absolute;
+    bottom: 3vw;
+    right: 6.25vw;
+    font-size: 6.25vw;
+    color: $color-secondary;
+    font-weight: 500;
+    text-shadow: 0 3px 6px rgba($color-black, 0.16);
+    
+    @include mq(sp) {
+      font-size: 13.33vw;
+      right: 5.07vw;
+      bottom: 4vw;
+    }
+  }
+}

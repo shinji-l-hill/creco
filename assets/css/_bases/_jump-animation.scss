@@ -1,0 +1,25 @@
+@use "var" as *;
+@use "mixin" as *;
+
+.js-jump {
+  position: relative;
+  overflow: hidden;
+}
+
+.js-image-default {
+  position: relative;
+  z-index: 1;
+}
+
+.js-image-jump {
+  position: absolute;
+  top:0;
+  left: 0;
+  z-index: 2;
+  transform: translateY(100%);
+  transition: 0.3s;
+
+  &.active {
+    transform: translateY(0%);
+  }
+}

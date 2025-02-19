@@ -1,0 +1,28 @@
+// Colors
+$color-blue: #3181B0;
+$color-bluegray: #CDE0EB;
+$color-white: #fff;
+$color-black: #333;
+$color-orange: #FC8C60;
+$color-lightorange: #FFF5F0;
+$color-lightorange2: #FFCF98;
+$color-lightyellow: #FFFEEA;
+$color-lightgray: #F4F4F4;
+$color-lightgray2: #D0D0D0;
+$color-lightgray3: #707070;
+$color-lightgray4: #F2F2F2;
+$color-lightgray5: #D8D8D8;
+
+$color-primary: $color-blue;
+$color-secondary: $color-orange;
+$color-border: $color-lightgray3;
+
+$content-width: 1400px;
+$content-X-padding: 2.67vw;
+
+$breakpoints: (
+  'content-width': "screen and (max-width: 1400px)",
+  'pc': "screen and (max-width: 1050px)",
+  'md': "screen and (max-width: 850px)",
+  'sp': "screen and (max-width: 700px)"
+);

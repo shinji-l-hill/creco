@@ -1,0 +1,60 @@
+@use "var" as *;
+@use "mixin" as *;
+
+body {
+  font-family: "Helvetica", "Noto Sans JP", sans-serif;
+  color: $color-black;
+}
+
+.main-content {
+  overflow-x: hidden;
+}
+
+img {
+  width: 100%;
+}
+
+.sp-none {
+  
+  @include mq(sp) {
+    display: none;
+  }
+}
+
+.pc-none {
+  display: none;
+  
+  @include mq(sp) {
+    display: block;
+  }
+}
+
+.underline-orange {
+  position: relative;
+
+  &:after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: $color-secondary;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.link-secondary {
+  position: relative;
+  color: $color-secondary;
+  font-weight: 500;
+
+  &:after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: $color-secondary;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}

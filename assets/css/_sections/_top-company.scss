@@ -1,0 +1,140 @@
+@use "../_bases" as *;
+
+
+.top-company {
+
+  &__inner {
+    max-width: 750px;
+    margin: auto;
+  }
+
+  &__list {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  &__list-row {
+    border-bottom: 1px solid $color-border;
+
+    @include mq(sp) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 26px;
+    }
+  }
+  
+  &__list-title {
+    font-weight: 700;
+    font-size: 18px;
+    white-space: nowrap;
+    padding: 1.78em;
+    padding-right: 4.5em;
+
+    @include mq(sp) {
+      padding: 0;
+      font-size: 16px;
+    }
+  }
+
+  &__company {
+    position: relative;
+  }
+  &__ruby {
+    position: absolute;
+    top: -1.5em;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 0.6em;
+  }
+  
+  &__list-item {
+    font-size: 18px;
+    padding-top: 1.78em;
+    padding-bottom: 1.78em;
+    font-weight: 400;
+    width: 100%;
+    
+    @include mq(sp) {
+      text-align: center;
+      font-size: 16px;
+      padding-top: 1.1em;
+    }
+  }
+
+  &__list-link {
+    position: relative;
+    padding-bottom: 0.2em;
+    margin-left: 1em;
+    @include mq(sp) {
+      display: block;
+      width: fit-content;
+      margin: auto;
+      margin-top: 1em;
+    }
+
+    &:after {
+      content: "";
+      width: 100%;
+      height: 1px;
+      background: $color-border;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  &__link-inner {
+    max-width: 170px;
+    margin: auto;
+  }
+
+  &__products {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+  }
+
+  &__product {
+    display: flex;
+    padding: 20px 15px;
+    border: 2px solid $color-lightgray5;
+    gap: 15px;
+  }
+  
+  &__product-image-inner {
+    width: 87px;
+    flex-shrink: 0;
+
+    @include mq(sp) {
+      width: 100px;
+    }
+  }
+  
+  &__product-image {
+    width: 100%;
+  }
+
+  &__product-right {
+    text-align: left;
+  }
+  
+  &__product-title-image {
+
+    &--tsumugu {
+      width: 140px;
+    }
+
+    &--thanks {
+      width: 128px;
+    }
+  }
+
+  &__product-text {
+    font-size: 15px;
+    line-height: 1.5em;
+    margin-top: 0.5em;
+  }
+}

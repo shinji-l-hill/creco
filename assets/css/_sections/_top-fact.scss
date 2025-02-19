@@ -1,0 +1,80 @@
+@use "../_bases" as *;
+
+
+.top-fact {
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: 52px;
+
+    @include mq(sp) {
+      gap: 100px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include mq(sp) {
+      flex-direction: column;
+    }
+
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+
+      @include mq(sp) {
+        flex-direction: column;
+      }
+    }
+  }
+
+  &__image-inner {
+    width: 40.5%;
+
+    @include mq(sp) {
+      width: 100%;
+    }
+  }
+  
+  &__text-inner {
+    width: 56.43%;
+
+    @include mq(sp) {
+      width: 100%;
+    }
+  }
+
+  &__item-title {
+    font-size: 38px;
+    color: $color-secondary;
+    font-weight: 500;
+    margin-bottom: 0.79em;
+    line-height: 1.3em;
+    
+    @include mq(sp) {
+      font-size: 26px;
+    }
+  }
+
+  &__item-text {
+    font-size: 16px;
+    line-height: 1.7em;
+    margin-bottom: 3.625em;
+    
+    @include mq(sp) {
+      font-size: 14px;
+      margin-bottom: 2.64em;
+    }
+  }
+
+  &__link-inner {
+    max-width: 300px;
+
+    @include mq(sp) {
+      margin: auto;
+    }
+  }
+}

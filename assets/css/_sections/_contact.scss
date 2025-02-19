@@ -1,0 +1,76 @@
+@use "../_bases" as *;
+
+.contact {
+  max-width: 750px;
+  margin: auto;
+
+  &__item {
+    margin-bottom: 2em;
+    font-size: 16px;
+  }
+
+  &__item--check{
+    margin-bottom: 3em;
+    margin-top: 3em;
+    font-size: 16px;
+
+    & label {
+      display: flex;
+      align-items: center;
+
+      @include mq(sp) {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+      }
+    }
+  }
+
+  &__label {
+    font-weight: 500;
+    display: block;
+  }
+  
+  &__input-text {
+    display: block;
+    background-color: $color-lightgray4;
+    width: 100%;
+    padding: 1em;
+  }
+
+  &__checkbox {
+    margin-bottom: 0.3em;
+  }
+
+  &__textarea {
+    background-color: $color-lightgray4;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    padding: 1em;
+    height: 7em;
+  }
+
+  &__submit-inner {
+    max-width: 95px;
+    margin: auto;
+  }
+}
+
+.wpcf7-list-item {
+  margin: 0;
+
+  & input[type="checkbox"] {
+    transform: scale(3);
+    margin-left: 0.7em;
+    margin-right: 1.5em;
+    
+    @include mq(sp) {
+      margin-top: 1.5em;
+      margin-right: 0.7em;
+    }
+  }
+
+  & .wpcf7-list-item-label {
+    font-weight: 500;
+  }
+}

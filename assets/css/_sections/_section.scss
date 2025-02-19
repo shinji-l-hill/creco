@@ -1,0 +1,211 @@
+@use "../_bases" as *;
+
+
+@at-root %section {
+  padding: 0 $content-X-padding;
+}
+
+.section {
+  @extend %section;
+  
+  &--top-mission {
+    position: relative;
+    @extend %section;
+    z-index: 3;
+    
+    @include mq(sp) {
+      margin-top: 17.87vw;
+    }
+  }
+  
+  &--top-vision {
+    @extend %section;
+    background-image: url(../images/top/vison_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 589px;
+    height: 36.81vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    @include mq(sp) {
+      background-size: 723px;
+      height: 500px;
+      min-height: auto;
+      background-position: center bottom;
+    }
+  }
+
+  &--top-commitment {
+    @extend %section;
+    padding-top: 115px;
+    padding-bottom: 200px;
+    
+    @include mq(sp) {
+      padding-top: 70px;
+      padding-bottom: 73px;
+    }
+  }
+
+  &--top-event {
+    @extend %section;
+    background-color: $color-lightyellow;
+    padding-top: 93px;
+    padding-bottom: 137px;
+    margin-top: 263px;
+    margin-bottom: 134px;
+    
+    @include mq(sp) {
+      margin-top: 85px;
+      padding-top: 67px;
+      padding-bottom: 62px;
+      margin-bottom: 98px;
+    }
+  }
+
+  &--top-join {
+    @extend %section;
+    margin-top: 196px;
+    
+    @include mq(sp) {
+      margin-top: 137px;
+    }
+  }
+
+  &--top-event {
+    @extend %section;
+    background-color: $color-lightyellow;
+    padding-top: 93px;
+    padding-bottom: 137px;
+    margin-top: 263px;
+    margin-bottom: 134px;
+    
+    @include mq(sp) {
+      margin-top: 85px;
+      padding-top: 67px;
+      padding-bottom: 62px;
+      margin-bottom: 98px;
+    }
+  }
+
+  &--top-contact {
+    @extend %section;
+    margin-top: 270px;
+    margin-bottom: 160px;
+    
+    @include mq(sp) {
+      margin-top: 140px;
+      margin-bottom: 140px;
+    }
+  }
+
+  &--page-interview {
+    @extend %section;
+    margin-top: 80px;
+    
+    @include mq(sp) {
+      margin-top: 50px;
+    }
+  }
+
+  &--commitment {
+    @extend %section;
+    margin-top: 100px;
+    
+    @include mq(sp) {
+      margin-top: 50px;
+    }
+  }
+
+  &--commitment-content {
+    @extend %section;
+    margin-top: 200px;
+    background-image: url(../images/common/commitment-content-bg.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 138px;
+    
+    @include mq(sp) {
+      background-image: url(../images/common/commitment-content-bg_sp.png);
+      margin-top: 50px;
+      padding-top: 90px;
+    }
+  }
+
+  &--fact {
+    @extend %section;
+    margin-top: 85px;
+    margin-bottom: 33px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+    @include mq(sp) {
+      margin-bottom: 52px;
+      margin-top: 52px;
+    }
+  }
+
+  &--interview-ob {
+    @extend %section;
+    padding-top: 160px;
+    margin-top: 180px;
+    margin-bottom: 160px;
+    background-image: url(../images/interview/blue-bg.png);
+    background-position: top;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+    @include mq(sp) {
+      padding-top: 80px;
+      background-image: url(../images/interview/blue-bg-sp.png);
+      margin-top: 70px;
+      margin-bottom: 70px;
+    }
+  }
+
+  &--secondary-wavy {
+    @extend %section;
+    padding-top: 145px;
+    padding-bottom: 140px;
+    margin-top: 180px;
+    margin-bottom: 160px;
+    background: linear-gradient(to bottom, transparent 5vw, $color-lightorange 5vw), url(../images/interview/bg_orange-wavy.png);
+    background-position: top;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+    @include mq(sp) {
+      background: linear-gradient(to bottom, transparent 5vw, $color-lightorange 5vw), url(../images/interview/bg_orange-wavy-sp.png);
+      padding-top: 85px;
+      padding-bottom: 75px;
+      margin-top: 70px;
+      margin-bottom: 70px;
+    }
+  }
+
+  &--green-wavy {
+    @extend %section;
+    padding-top: 140px;
+    margin-bottom: 175px;
+    background-image: url(../images/fact/bg_green-wavy.png);
+    background-position: top;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+    @include mq(sp) {
+      background-image: url(../images/fact/bg_green-wavy_sp.png);
+      padding-top: 90px;
+      margin-bottom: 100px;
+    }
+  }
+
+  &__wrapper {
+    position:relative;
+    max-width: $content-width;
+    margin: auto;
+  }
+}
