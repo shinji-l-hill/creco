@@ -1,7 +1,7 @@
 @use "../_bases" as *;
 
 .common {
-  &__title {
+  @at-root %__title {
     position: relative;
     font-size: 45px;
     font-weight: 700;
@@ -22,13 +22,32 @@
       transform: translateX(-50%);
       width: 1.78em;
       height: 5px;
-      background-color: $color-secondary;
-      
+
       @include mq(sp) {
         width: 2.5em;
       }
     }
   }
+
+  &__title {
+    @extend %__title;
+    
+    &:after {
+      background-color: $color-secondary;
+    }
+    
+    &--primary {
+      @extend %__title;
+
+      @include mq(sp) {
+        font-size: 25px;
+      }
+      &:after {
+        background-color: $color-primary;
+      }
+    }
+  }
+
   &__title2 {
     position: relative;
     font-size: 32px;
@@ -52,7 +71,7 @@
       transform: translateX(-50%);
       width: 5em;
       height: 3px;
-      background: linear-gradient(to right, $color-secondary 50%, $color-lightgray5 50%);      
+      background: linear-gradient(to right, $color-secondary 50%, $color-lightgray5 50%);
       @include mq(sp) {
         width: 2.5em;
       }
@@ -82,7 +101,7 @@
       transform: translateX(-50%);
       width: 5em;
       height: 3px;
-      background: linear-gradient(to right, $color-primary 50%, $color-lightgray5 50%);      
+      background: linear-gradient(to right, $color-primary 50%, $color-lightgray5 50%);
       @include mq(sp) {
         width: 2.5em;
       }
@@ -175,11 +194,11 @@
   &__link2 {
     @extend %__link2;
     font-size: 20px;
-    
+
     @include mq(sp) {
       font-size: 18px;
     }
-    
+
     &--min-text {
       @extend %__link2;
       font-size: 18px;
@@ -210,7 +229,7 @@
   &__link3 {
     @extend %__link3;
     border-radius: 3em;
-    
+
     &--square {
       @extend %__link3;
       border-radius: 5px;

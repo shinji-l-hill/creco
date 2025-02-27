@@ -86,14 +86,24 @@
     }
   }
 
-  &__item-image-inner {
-    width: 40.73%;
+  @at-root %__item-image-inner {
     min-width: 300px;
     flex-shrink: 0;
 
     @include mq(sp) {
       width: 100%;
       min-width: 100%;
+    }
+  }
+
+  &__item-image-inner {
+    @extend %__item-image-inner;
+    width: 40.73%;
+    
+    &--wide {
+      @extend %__item-image-inner;
+      width: 56%;
+
     }
   }
 
@@ -131,6 +141,12 @@
   &__image-inner {
     max-width: 960px;
     margin: auto;
+    
+    &--content-width {
+      max-width: $content-width;
+      margin: auto;
+      width: 100%;
+    }
   }
 
   &__image-box {

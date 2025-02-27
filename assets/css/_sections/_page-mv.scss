@@ -43,6 +43,15 @@
     }
   }
 
+  &--privacy-policy {
+    @extend %mv;
+    background-image: url(../images/privacy-policy/mv.png);
+    
+    @include mq(sp) {
+      background-image: url(../images/privacy-policy/mv_sp.png);
+    }
+  }
+
   &__wrapper {
     display: flex;
     align-items: center;

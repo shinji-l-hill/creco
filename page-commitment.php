@@ -28,7 +28,7 @@
       </div>
     </div>
     <div class="page-commitment__image-container">
-      <div class="page-commitment__image-inner">
+      <div class="page-commitment__image-inner--content-width">
         <picture>
           <source srcset="<?php echo IMAGE_ROOT; ?>/commitment/img02_sp.png" media="<?php echo SP_WIDTH; ?>">
           <img src="<?php echo IMAGE_ROOT; ?>/commitment/img02.png" alt="キャリアパスの多様化" class="page-commitment__item-image">
@@ -45,7 +45,7 @@
     </div>
     <h3 class="page-commitment__item-title pc-none">CRE-COは貴方が<br>最優先です</h3>
     <div class="page-commitment__item--not-first">
-      <div class="page-commitment__item-image-inner">
+      <div class="page-commitment__item-image-inner--wide">
         <img src="<?php echo IMAGE_ROOT; ?>/commitment/img03.png" alt="CRE-COは貴方が最優先です" class="page-commitment__item-image">
       </div>
       <div class="page-commitment__item-text-inner">

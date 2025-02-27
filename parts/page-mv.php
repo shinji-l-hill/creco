@@ -7,6 +7,10 @@ if (isset($post)) {
 
 <section class="page-mv--<?php echo $slug; ?>">
   <div class="page-mv__wrapper">
-    <h1 class="common__title"><?php the_title(); ?></h1>
+    <?php if($slug == 'privacy-policy') : ?>
+      <h1 class="common__title--primary"><?php the_title(); ?></h1>
+    <?php else: ?>
+      <h1 class="common__title"><?php the_title(); ?></h1>
+    <?php endif; ?>
   </div>
 </section>
