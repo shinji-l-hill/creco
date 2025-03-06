@@ -1,4 +1,4 @@
-<?php get_header(); ?> 
+<?php get_header(); ?>
 <?php get_template_part('parts/page-mv'); ?>
 <section class="section--fact">
   <div class="section__wrapper">

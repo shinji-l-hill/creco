@@ -84,11 +84,7 @@ function createChart(canvasId, chartData) {
 
 // 各グラフのデータを定義
 
-//エンジニア満足度調査
-const chart1Data = {
-      negativeRatio: [25, 20, 5.7, 12.5, 0, 10.5, 3.2],//オレンジの棒グラフ
-      evaluation: [3, 3.8, 3.83, 3.86, 4.12, 4, 4]//折れ線グラフ
-};
+
 
 //マッチング満足度調査
 const chart2Data = {
@@ -121,18 +117,46 @@ const chart6Data = {
 // 棒グラフを描画
 
 //エンジニア満足度調査
-createChart('#js-graph-fact01', chart1Data);
+$("#js-graph-fact01").one("inview", function (event, isInView) {
+      //エンジニア満足度調査
+      const chart1Data = {
+            negativeRatio: [25, 20, 5.7, 12.5, 0, 10.5, 3.2],//オレンジの棒グラフ
+            evaluation: [3, 3.8, 3.83, 3.86, 4.12, 4, 4]//折れ線グラフ
+      };
+      if (isInView) {
+            createChart('#js-graph-fact01', chart1Data);
+      }
+});
 //マッチング満足度調査
-createChart('#js-graph-fact02', chart2Data);
+$("#js-graph-fact02").one("inview", function (event, isInView) {
+      if (isInView) {
+            createChart('#js-graph-fact02', chart2Data);
+      }
+});
 //エンジニア数、離職率
-createChart('#js-graph-fact03', chart3Data);
+$("#js-graph-fact03").one("inview", function (event, isInView) {
+      if (isInView) {
+            createChart('#js-graph-fact03', chart3Data);
+      }
+});
 //業績推移
-createChart('#js-graph-fact07', chart4Data);
+$("#js-graph-fact07").one("inview", function (event, isInView) {
+      if (isInView) {
+            createChart('#js-graph-fact07', chart4Data);
+      }
+});
 //eLV
-createChart('#js-graph-fact09', chart5Data);
+$("#js-graph-fact09").one("inview", function (event, isInView) {
+      if (isInView) {
+            createChart('#js-graph-fact09', chart5Data);
+      }
+});
 //ESMC
-createChart('#js-graph-fact10', chart6Data);
-
+$("#js-graph-fact10").one("inview", function (event, isInView) {
+      if (isInView) {
+            createChart('#js-graph-fact10', chart6Data);
+      }
+});
 
 
 /* 
@@ -218,27 +242,40 @@ const chartDoughnutData01 = {
       labels: ['テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト',], datas: [38.6, 34.1, 9.1, 6.8, 4.5, 2.3, 2.3, 2.3],
       colors: ['#FC8C60', '#FFCF98', '#FFFEEA', 'aqua', 'skyblue', '#AFEEEE', '#33CCCC', '#E0FFFF'],
 }
-createDoughnutChart('#js-graph-fact04', chartDoughnutData01);
-
+$("#js-graph-fact04").one("inview", function (event, isInView) {
+      if (isInView) {
+            createDoughnutChart('#js-graph-fact04', chartDoughnutData01);
+      }
+});
 //リモートワーク (日数/週)
 
 const chartDoughnutData02 = {
       labels: ['テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト',], datas: [38.6, 34.1, 9.1, 6.8, 4.5, 2.3, 2.3, 2.3],
       colors: ['#FC8C60', '#FFCF98', '#FFFEEA', 'aqua', 'skyblue', '#AFEEEE', '#33CCCC', '#E0FFFF'],
 }
-createDoughnutChart('#js-graph-fact05', chartDoughnutData02);
-
+$("#js-graph-fact05").one("inview", function (event, isInView) {
+      if (isInView) {
+            createDoughnutChart('#js-graph-fact05', chartDoughnutData02);
+      }
+});
 //残業時間 (時間／月)
 const chartDoughnutData03 = {
       labels: ['テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト',], datas: [38.6, 34.1, 9.1, 6.8, 4.5, 2.3, 2.3, 2.3],
       colors: ['#FC8C60', '#FFCF98', '#FFFEEA', 'aqua', 'skyblue', '#AFEEEE', '#33CCCC', '#E0FFFF'],
 }
-createDoughnutChart('#js-graph-fact06', chartDoughnutData03);
-
+$("#js-graph-fact06").one("inview", function (event, isInView) {
+      if (isInView) {
+            createDoughnutChart('#js-graph-fact06', chartDoughnutData03);
+      }
+});
 //単金別件数比率
 const chartDoughnutData04 = {
       labels: ['テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト',], datas: [38.6, 34.1, 9.1, 6.8, 4.5, 2.3, 2.3, 2.3],
       colors: ['#FC8C60', '#FFCF98', '#FFFEEA', 'aqua', 'skyblue', '#AFEEEE', '#33CCCC', '#E0FFFF'],
 }
-createDoughnutChart('#js-graph-fact08', chartDoughnutData04);
+$("#js-graph-fact08").one("inview", function (event, isInView) {
+      if (isInView) {
+            createDoughnutChart('#js-graph-fact08', chartDoughnutData04);
+      }
+});
 
