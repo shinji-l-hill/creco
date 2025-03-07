@@ -943,7 +943,7 @@
       </div>
     </div>
     <div class="satisfaction__accordion-inner">
-      <div class="satisfaction__accordion active">
+      <div class="satisfaction__accordion">
         <p class="satisfaction__accordion-title">
           <span class="satisfaction__accordion-number">Q16</span>
           フォローについて良いアドバイスをもらていると感じますか?
