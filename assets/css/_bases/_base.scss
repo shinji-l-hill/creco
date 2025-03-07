@@ -58,3 +58,12 @@ img {
     left: 0;
   }
 }
+
+.accent-secondary {
+  color: $color-secondary;
+  
+  &--bold {
+    color: $color-secondary;
+    font-weight: 500;
+  }
+}

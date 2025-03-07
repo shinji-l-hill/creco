@@ -52,6 +52,15 @@
     }
   }
 
+  &--engineer-satisfaction {
+    @extend %mv;
+    background-image: url(../images/engineer-satisfaction/mv.jpg);
+    
+    @include mq(sp) {
+      background-image: url(../images/engineer-satisfaction/mv_sp.jpg);
+    }
+  }
+
   &__wrapper {
     display: flex;
     align-items: center;
