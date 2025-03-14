@@ -279,3 +279,189 @@ $("#js-graph-fact08").one("inview", function (event, isInView) {
       }
 });
 
+
+
+/*
+エンジニア満足度調査
+ ---------------------*/
+//自分の会社が良い会社だと思えるか？（友人に勧められるか？）
+const chartDoughnutData_enginer01 = {
+      labels: ['テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト',], datas: [38.6, 34.1, 9.1, 6.8, 4.5, 2.3, 2.3, 2.3],
+      colors: ['#FC8C60', '#FFCF98', '#FFFEEA', 'aqua', 'skyblue', '#AFEEEE', '#33CCCC', '#E0FFFF'],
+}
+$("#js-graph-engineer01").one("inview", function (event, isInView) {
+      if (isInView) {
+            createDoughnutChart('#js-graph-engineer01', chartDoughnutData_enginer01);
+      }
+});
+
+
+//今の現場への満足度
+const chartDoughnutData_enginer02 = {
+      labels: ['テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト',], datas: [38.6, 34.1, 9.1, 6.8, 4.5, 2.3, 2.3, 2.3],
+      colors: ['#FC8C60', '#FFCF98', '#FFFEEA', 'aqua', 'skyblue', '#AFEEEE', '#33CCCC', '#E0FFFF'],
+}
+$("#js-graph-engineer02").one("inview", function (event, isInView) {
+      if (isInView) {
+            createDoughnutChart('#js-graph-engineer02', chartDoughnutData_enginer02);
+      }
+});
+
+
+//顧客からのフィードバックを得られているか
+const chartDoughnutData_enginer03 = {
+      labels: ['テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト',], datas: [38.6, 34.1, 9.1, 6.8, 4.5, 2.3, 2.3, 2.3],
+      colors: ['#FC8C60', '#FFCF98', '#FFFEEA', 'aqua', 'skyblue', '#AFEEEE', '#33CCCC', '#E0FFFF'],
+}
+$("#js-graph-engineer03").one("inview", function (event, isInView) {
+      if (isInView) {
+            createDoughnutChart('#js-graph-engineer03', chartDoughnutData_enginer03);
+      }
+});
+
+//担当営業の顧客への対応について 適切だと感じますか?
+const chartDoughnutData_enginer04 = {
+      labels: ['テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト',], datas: [38.6, 34.1, 9.1, 6.8, 4.5, 2.3, 2.3, 2.3],
+      colors: ['#FC8C60', '#FFCF98', '#FFFEEA', 'aqua', 'skyblue', '#AFEEEE', '#33CCCC', '#E0FFFF'],
+}
+$("#js-graph-engineer04").one("inview", function (event, isInView) {
+      if (isInView) {
+            createDoughnutChart('#js-graph-engineer04', chartDoughnutData_enginer04);
+      }
+});
+
+//バックオフィスサービス全体について
+const chartDoughnutData_enginer05 = {
+      labels: ['テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト',], datas: [38.6, 34.1, 9.1, 6.8, 4.5, 2.3, 2.3, 2.3],
+      colors: ['#FC8C60', '#FFCF98', '#FFFEEA', 'aqua', 'skyblue', '#AFEEEE', '#33CCCC', '#E0FFFF'],
+}
+$("#js-graph-engineer05").one("inview", function (event, isInView) {
+      if (isInView) {
+            createDoughnutChart('#js-graph-engineer05', chartDoughnutData_enginer05);
+      }
+});
+
+//事務手続きについて各種申請や手順書などにストレスを感じていませんか
+const chartDoughnutData_enginer06 = {
+      labels: ['テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト',], datas: [38.6, 34.1, 9.1, 6.8, 4.5, 2.3, 2.3, 2.3],
+      colors: ['#FC8C60', '#FFCF98', '#FFFEEA', 'aqua', 'skyblue', '#AFEEEE', '#33CCCC', '#E0FFFF'],
+}
+$("#js-graph-engineer06").one("inview", function (event, isInView) {
+      if (isInView) {
+            createDoughnutChart('#js-graph-engineer06', chartDoughnutData_enginer06);
+      }
+});
+
+//各種手当てについて
+const chartDoughnutData_enginer07 = {
+      labels: ['テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト',], datas: [38.6, 34.1, 9.1, 6.8, 4.5, 2.3, 2.3, 2.3],
+      colors: ['#FC8C60', '#FFCF98', '#FFFEEA', 'aqua', 'skyblue', '#AFEEEE', '#33CCCC', '#E0FFFF'],
+}
+$("#js-graph-engineer07").one("inview", function (event, isInView) {
+      if (isInView) {
+            createDoughnutChart('#js-graph-engineer07', chartDoughnutData_enginer07);
+      }
+});
+
+
+//各種ルールについて
+const chartDoughnutData_enginer08 = {
+      labels: ['テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト',], datas: [38.6, 34.1, 9.1, 6.8, 4.5, 2.3, 2.3, 2.3],
+      colors: ['#FC8C60', '#FFCF98', '#FFFEEA', 'aqua', 'skyblue', '#AFEEEE', '#33CCCC', '#E0FFFF'],
+}
+$("#js-graph-engineer08").one("inview", function (event, isInView) {
+      if (isInView) {
+            createDoughnutChart('#js-graph-engineer08', chartDoughnutData_enginer08);
+      }
+});
+
+
+//福利厚生(金銭以外の報酬)について
+const chartDoughnutData_enginer09 = {
+      labels: ['テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト',], datas: [38.6, 34.1, 9.1, 6.8, 4.5, 2.3, 2.3, 2.3],
+      colors: ['#FC8C60', '#FFCF98', '#FFFEEA', 'aqua', 'skyblue', '#AFEEEE', '#33CCCC', '#E0FFFF'],
+}
+$("#js-graph-engineer09").one("inview", function (event, isInView) {
+      if (isInView) {
+            createDoughnutChart('#js-graph-engineer09', chartDoughnutData_enginer09);
+      }
+});
+
+
+//自己成長感について
+const chartDoughnutData_enginer10 = {
+      labels: ['テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト',], datas: [38.6, 34.1, 9.1, 6.8, 4.5, 2.3, 2.3, 2.3],
+      colors: ['#FC8C60', '#FFCF98', '#FFFEEA', 'aqua', 'skyblue', '#AFEEEE', '#33CCCC', '#E0FFFF'],
+}
+$("#js-graph-engineer10").one("inview", function (event, isInView) {
+      if (isInView) {
+            createDoughnutChart('#js-graph-engineer10', chartDoughnutData_enginer10);
+      }
+});
+
+
+//キャリアプランについて会社が配慮していると感じるか
+const chartDoughnutData_enginer11 = {
+      labels: ['テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト',], datas: [38.6, 34.1, 9.1, 6.8, 4.5, 2.3, 2.3, 2.3],
+      colors: ['#FC8C60', '#FFCF98', '#FFFEEA', 'aqua', 'skyblue', '#AFEEEE', '#33CCCC', '#E0FFFF'],
+}
+$("#js-graph-engineer11").one("inview", function (event, isInView) {
+      if (isInView) {
+            createDoughnutChart('#js-graph-engineer11', chartDoughnutData_enginer11);
+      }
+});
+
+//働きやすい環境について会社が配慮していると感じるか
+const chartDoughnutData_enginer12 = {
+      labels: ['テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト',], datas: [38.6, 34.1, 9.1, 6.8, 4.5, 2.3, 2.3, 2.3],
+      colors: ['#FC8C60', '#FFCF98', '#FFFEEA', 'aqua', 'skyblue', '#AFEEEE', '#33CCCC', '#E0FFFF'],
+}
+$("#js-graph-engineer12").one("inview", function (event, isInView) {
+      if (isInView) {
+            createDoughnutChart('#js-graph-engineer12', chartDoughnutData_enginer12);
+      }
+});
+
+//組織風土について 社内メンバーと仲間意識を感じますか?
+const chartDoughnutData_enginer13 = {
+      labels: ['テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト',], datas: [38.6, 34.1, 9.1, 6.8, 4.5, 2.3, 2.3, 2.3],
+      colors: ['#FC8C60', '#FFCF98', '#FFFEEA', 'aqua', 'skyblue', '#AFEEEE', '#33CCCC', '#E0FFFF'],
+}
+$("#js-graph-engineer13").one("inview", function (event, isInView) {
+      if (isInView) {
+            createDoughnutChart('#js-graph-engineer13', chartDoughnutData_enginer13);
+      }
+});
+
+//単金について
+const chartDoughnutData_enginer14 = {
+      labels: ['テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト',], datas: [38.6, 34.1, 9.1, 6.8, 4.5, 2.3, 2.3, 2.3],
+      colors: ['#FC8C60', '#FFCF98', '#FFFEEA', 'aqua', 'skyblue', '#AFEEEE', '#33CCCC', '#E0FFFF'],
+}
+$("#js-graph-engineer14").one("inview", function (event, isInView) {
+      if (isInView) {
+            createDoughnutChart('#js-graph-engineer14', chartDoughnutData_enginer14);
+      }
+});
+
+//CRE-CO(共同体)への貢献度について
+const chartDoughnutData_enginer15 = {
+      labels: ['テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト',], datas: [38.6, 34.1, 9.1, 6.8, 4.5, 2.3, 2.3, 2.3],
+      colors: ['#FC8C60', '#FFCF98', '#FFFEEA', 'aqua', 'skyblue', '#AFEEEE', '#33CCCC', '#E0FFFF'],
+}
+$("#js-graph-engineer15").one("inview", function (event, isInView) {
+      if (isInView) {
+            createDoughnutChart('#js-graph-engineer15', chartDoughnutData_enginer15);
+      }
+});
+
+//フォローについて良いアドバイスをもらていると感じますか
+const chartDoughnutData_enginer16 = {
+      labels: ['テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト', 'テキスト',], datas: [38.6, 34.1, 9.1, 6.8, 4.5, 2.3, 2.3, 2.3],
+      colors: ['#FC8C60', '#FFCF98', '#FFFEEA', 'aqua', 'skyblue', '#AFEEEE', '#33CCCC', '#E0FFFF'],
+}
+$("#js-graph-engineer16").one("inview", function (event, isInView) {
+      if (isInView) {
+            createDoughnutChart('#js-graph-engineer16', chartDoughnutData_enginer16);
+      }
+});

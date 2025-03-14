@@ -14,7 +14,7 @@
     background-position: 1em center;
     padding: 0.1em 0 0.54em;
     margin-bottom: 3.75em;
-    
+
     @include mq(sp) {
       font-size: 16px;
       text-align: center;
@@ -73,7 +73,7 @@
   &__accordion {
     position: relative;
     cursor: pointer;
-    padding: 0 55px 18px 0 ;
+    padding: 0 55px 18px 0;
     width: 100%;
     border: none;
     text-align: left;
@@ -91,7 +91,7 @@
   &__accordion-title {
     font-size: 19px;
     line-height: 1.5em;
-    
+
     @include mq(sp) {
       display: flex;
       gap: 22px;
@@ -136,7 +136,11 @@
   &__graph-inner {
     width: 44.86%;
     flex-shrink: 0;
-    background-color: gray;
+
+    // background-color: gray;
+    @include mq(sp) {
+      width: 100%;
+    }
   }
 
   @at-root %__text-inner {
@@ -144,16 +148,92 @@
     background-repeat: no-repeat;
     background-position: top right;
     min-height: 265px;
-    
+
     @include mq(sp) {
       background-size: 53.33%;
       background-position: top center;
     }
   }
 
+  &__graph-title-wrap {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  &__graph-title {
+    display: flex;
+    background-color: #FFFEEA;
+    border-left: 2px solid #FFCF98;
+    padding: 6px 9px;
+    font-weight: 500;
+
+    @include mq(sp) {
+      width: 100%;
+      font-size: 0.88rem;
+    }
+
+  }
+
+  &__graph-q {}
+
+  &__graphq-text {}
+
+  &__graph-content {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  &__graph-left {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #FC8C60;
+  }
+
+  &__graph-text {
+    //display: flex;
+    font-size: 10px;
+
+  }
+
+  &__graph-avarege {
+    writing-mode: vertical-rl;
+    letter-spacing: 0.1em;
+
+    @include mq(sp) {
+      font-size: 0.7rem;
+    }
+  }
+
+  &__graph-wrap {
+    flex: 1 1 auto;
+  }
+
+  &__graph-main {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  &__graph-right {
+    writing-mode: vertical-rl;
+    text-align: center;
+    color: #3181B0;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+
+    @include mq(sp) {
+      font-size: 0.7rem;
+    }
+  }
+
   &__text-inner {
     @extend %__text-inner;
-    
+
     &--good {
       @extend %__text-inner;
       margin-bottom: 50px;
@@ -163,7 +243,7 @@
         margin-bottom: 40px;
       }
     }
-    
+
     &--bad {
       @extend %__text-inner;
       background-image: url(../images/engineer-satisfaction/bad.png);
@@ -207,7 +287,7 @@
     background-position: left 50px;
     background-repeat: no-repeat;
     margin-top: 50px;
-    
+
     @include mq(sp) {
       margin-top: 75px;
       padding: 30px 15px;
@@ -236,15 +316,13 @@
     }
   }
 
-  &__answer-list {
-
-  }
+  &__answer-list {}
 
   &__answer-list-item {
     display: flex;
     font-size: 17px;
     line-height: 1.6em;
-    
+
     @include mq(sp) {
       font-size: 14px;
       line-height: 2em;
@@ -262,7 +340,7 @@
     margin-bottom: 0.3em;
     color: $color-secondary;
     font-weight: 500;
-    
+
     @include mq(sp) {
       font-size: 14px;
       margin-top: 1.43em;
