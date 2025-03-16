@@ -11,7 +11,7 @@ function my_theme_enqueue_styles_scripts() {
   wp_enqueue_script('jump-image', ASSET_ROOT . '/js/jump-image.js', [], '1.0.0', true);
   wp_enqueue_script('my-script', ASSET_ROOT . '/js/script.js', [], '1.0.0', true);
   //wp_enqueue_script('lib-inview',  'https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js', [], '1.0.0', true);
-  if(is_page('fact')){
+  if(is_page('fact') || is_page('engineer-satisfaction')){
      wp_enqueue_script('lib-jq',  'https://code.jquery.com/jquery-3.4.1.min.js', [], '1.0.0', true);
   wp_enqueue_script('lib-inview',  'https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js', [], '1.0.0', true);
   wp_enqueue_script('lib-chart',  'https://cdn.jsdelivr.net/npm/chart.js', [], '1.0.0', true);
