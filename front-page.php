@@ -303,7 +303,7 @@
       <table class="top-company__list">
         <tr class="top-company__list-row">
           <th class="top-company__list-title">会社名</th>
-          <td class="top-company__list-item">株式会社<ruby class="top-company__company"> CRE-CO <rp>(</rp><rt class="top-company__ruby">クレコ</rt><rp>)</rp> </ruby>エンジニアリングサービス</td>
+          <td class="top-company__list-item">株式会社<ruby class="company__name"> CRE-CO <rp>(</rp><rt class="company__ruby">クレコ</rt><rp>)</rp> </ruby>エンジニアリングサービス</td>
         </tr>
         <tr class="top-company__list-row">
           <th class="top-company__list-title">住所</th>

@@ -61,6 +61,24 @@
     }
   }
 
+  &--service {
+    @extend %mv;
+    background-image: url(../images/service/mv.jpg);
+    
+    @include mq(sp) {
+      background-image: url(../images/service/mv_sp.jpg);
+    }
+  }
+
+  &--company {
+    @extend %mv;
+    background-image: url(../images/company/mv.jpg);
+    
+    @include mq(sp) {
+      background-image: url(../images/company/mv_sp.jpg);
+    }
+  }
+
   &__wrapper {
     display: flex;
     align-items: center;

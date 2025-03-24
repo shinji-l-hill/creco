@@ -48,20 +48,13 @@
     }
   }
 
-  &__title2 {
+  @at-root %__title2 {
     position: relative;
     font-size: 32px;
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
     padding-bottom: 0.2em;
-    margin-bottom: 5.28em;
-
-    @include mq(sp) {
-      font-size: 18px;
-      font-size: clamp(18px, 4.8vw, 30px);
-      margin-bottom: 3.89em;
-    }
 
     &:after {
       content: "";
@@ -77,6 +70,30 @@
       }
     }
   }
+
+  &__title2 {
+    @extend %__title2;
+    margin-bottom: 5.28em;
+
+    @include mq(sp) {
+      margin-bottom: 3.89em;
+      font-size: clamp(18px, 4.8vw, 30px);
+    }
+    
+    &--min-margin {
+      @extend %__title2;
+
+      margin-bottom: 2.3em;
+
+      @include mq(sp) {
+        margin-bottom: 2em;
+        font-size: 26px;
+      }
+      
+    }
+
+  }
+
 
   &__title3 {
     position: relative;
